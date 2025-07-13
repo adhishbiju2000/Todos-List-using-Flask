@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>{% block title %}MyTodo List{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <style>
+      html, body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      main {
+        flex: 1;
+      }
+
+
+      .navbar-dark .navbar-nav .nav-link {
+        color: #ffffff;
+        font-weight: 500;
+      }
+
+      .navbar-dark .navbar-nav .nav-link:hover {
+        color: #ffc107;
+      }
+
+      footer {
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body class="d-flex flex-column h-100">
+<style>
+  .navbar-text-lg {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+</style>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center navbar-text-lg" href="/">
+      MyTodo
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-2">
+          <a class="nav-link navbar-text-lg {% if request.path == '/' %}active{% endif %}" href="/">Home</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link navbar-text-lg {% if request.path == '/features' %}active{% endif %}" href="{{ url_for('features') }}">Features</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link navbar-text-lg {% if request.path == '/developer' %}active{% endif %}" href="{{ url_for('developer') }}">Developer</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+    <!-- Page Content -->
+    <main class="container my-4">
+      {% block content %}
+      {% endblock %}
+    </main>
+
+<!-- Footer -->
+
+<footer class="bg-dark text-white text-center py-3">
+  <div class="container">
+    <small style="font-size: 1.1rem;">© {{ datetime.utcnow().year }} MyTodo | Built by Adhish Biju</small>
+  </div>
+</footer>
+
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
