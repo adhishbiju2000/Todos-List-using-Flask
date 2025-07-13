@@ -25,4 +25,18 @@ A simple and elegant Todo list web application built with **Flask** and **SQLAlc
 
 ---
 
+<img width="1590" height="864" alt="Todo home page" src="https://github.com/user-attachments/assets/af451f6a-4896-4a59-a44f-108e9f583650" />
 
+
+<img width="1598" height="862" alt="Todo save" src="https://github.com/user-attachments/assets/3b9439f2-a06b-4ff0-8f50-8e7227ca1cbc" />
+
+
+<img width="1600" height="856" alt="Todo updating" src="https://github.com/user-attachments/assets/a824a7b7-b1d1-4944-bd46-0d3b7ed42cb5" />
+
+<img width="1600" height="864" alt="Todo Updated" src="https://github.com/user-attachments/assets/7df5ef7f-938f-4988-8d1b-243dd941450e" />
+
+
+<img width="1600" height="865" alt="Feature section" src="https://github.com/user-attachments/assets/1fc2f131-0adf-4dfe-9b50-4b4fcee3d40e" />
+
+
+<img width="1600" height="863" alt="Todo Developer page" src="https://github.com/user-attachments/assets/bb4ef7d8-c245-42c8-b4c4-5757b4a84a33" />
